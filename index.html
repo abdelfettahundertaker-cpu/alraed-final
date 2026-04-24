@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ALRAED Energy propose des solutions solaires pour les quartiers résidentiels, les entreprises et les usines, avec un catalogue de produits, des prix visibles et une commande via WhatsApp."
+    />
+    <meta name="theme-color" content="#2f7d32" />
+    <title>ALRAED Energy | Solutions Solaires & Catalogue</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="page-glow page-glow-one" aria-hidden="true"></div>
+    <div class="page-glow page-glow-two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="topbar container">
+        <p>Solutions solaires pour maisons, professionnels et usines au Maroc.</p>
+        <a
+          class="topbar-link"
+          href="https://wa.me/212677315076?text=Bonjour%20ALRAED%20Energy,%20je%20souhaite%20des%20informations%20sur%20vos%20solutions%20solaires."
+          target="_blank"
+          rel="noreferrer"
+        >
+          WhatsApp: 0677315076
+        </a>
+      </div>
+
+      <div class="nav-wrap container">
+        <a class="brand" href="#accueil" aria-label="ALRAED Energy">
+          <img src="assets/img/logo.jpeg" alt="Logo ALRAED Energy" />
+          <span class="brand-copy">
+            <strong>ALRAED Energy</strong>
+            <small>Énergie solaire pour un futur durable</small>
+          </span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mainNav"
+        >
+          Menu
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="#solutions">Solutions</a>
+          <a href="#categories">Catégories</a>
+          <a href="#catalogue">Catalogue</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="nav-pill" href="#catalogue">Voir les prix</a>
+          <button class="cart-toggle" id="cartToggle" type="button">
+            Panier
+            <span id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container" id="accueil">
+        <div class="hero-copy">
+          <span class="eyebrow">Catalogue solaire premium inspiré des meilleurs parcours du marché</span>
+          <h1>Réduisez votre facture d'électricité avec une solution solaire fiable et rentable.</h1>
+          <div class="hero-actions">
+            <button class="button button-primary" data-open-lead="residentiel" type="button">
+              Questionnaire résidentiel
+            </button>
+            <button class="button button-dark" data-open-lead="industriel" type="button">
+              Questionnaire industriel
+            </button>
+            <a class="button button-secondary" href="#catalogue">Explorer le catalogue</a>
+          </div>
+
+        </div>
+
+        <div class="hero-visual">
+          <article
+            class="visual-card visual-card-large"
+            style="background-image: linear-gradient(180deg, rgba(10, 24, 17, 0.1), rgba(10, 24, 17, 0.72)), url('assets/img/quartier alraed.png');"
+          >
+            <div class="visual-copy">
+                <span>Quartiers résidentiels</span>
+                <h2>Toitures solaires, batteries et autonomie énergétique pour les maisons.</h2>
+            </div>
+          </article>
+
+          <article
+            class="visual-card visual-card-tall"
+            style="background-image: linear-gradient(180deg, rgba(10, 24, 17, 0.12), rgba(10, 24, 17, 0.78)), url('assets/img/usine alraed.png');"
+          >
+            <div class="visual-copy">
+              <span>Usines & sites industriels</span>
+                <h2>Production, stockage et continuité énergétique pour les grandes charges.</h2>
+            </div>
+          </article>
+
+          <article class="visual-panel">
+            <div class="mini-spot">
+              <span class="mini-label">Bureaux & commerces</span>
+                <p>Offres dimensionnées pour les petites entreprises, les locaux commerciaux et les bâtiments professionnels.</p>
+              </div>
+              <div class="mini-list">
+                <span>Étude technique</span>
+                <span>Prix visibles</span>
+                <span>Devis express</span>
+              </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="benefits-section container" aria-label="Avantages ALRAED Energy">
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 7.5 12 4l8 3.5-8 3.5-8-3.5Z" />
+                <path d="M4 12.5 12 16l8-3.5" />
+                <path d="M4 17 12 20l8-3" />
+              </svg>
+            </div>
+            <div class="benefit-copy">
+              <h3>Sélection des produits</h3>
+              <p>Une gamme claire de panneaux, batteries, onduleurs et accessoires pour chaque usage.</p>
+            </div>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 21v-7" />
+                <path d="M12 21V3" />
+                <path d="M20 21v-11" />
+                <path d="M1 14h6" />
+                <path d="M9 6h6" />
+                <path d="M17 10h6" />
+              </svg>
+            </div>
+            <div class="benefit-copy">
+              <h3>Service sur mesure</h3>
+              <p>Des solutions adaptées à la consommation, à l'espace disponible et au budget du client.</p>
+            </div>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3 5 6v6c0 4.2 2.6 7.7 7 9 4.4-1.3 7-4.8 7-9V6l-7-3Z" />
+                <path d="m9.5 12 1.7 1.7 3.8-4" />
+              </svg>
+            </div>
+            <div class="benefit-copy">
+              <h3>Garantie et SAV</h3>
+              <p>Un accompagnement rassurant avec suivi, conseils et service après-vente selon le besoin.</p>
+            </div>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 8.5h18" />
+                <path d="M5 8.5V18a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8.5" />
+                <path d="M8 8.5V6.8A2.8 2.8 0 0 1 10.8 4H12" />
+                <path d="M16 8.5V6.8A2.8 2.8 0 0 0 13.2 4H12" />
+                <path d="M12 4v16" />
+              </svg>
+            </div>
+            <div class="benefit-copy">
+              <h3>One-Stop Shop</h3>
+              <p>Un seul partenaire pour le conseil, le choix des équipements et la demande de devis.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="lead-entry container" id="etude-rapide">
+        <div class="section-heading split-heading">
+          <div>
+            <span class="eyebrow">Qualification rapide</span>
+          </div>
+        </div>
+
+        <div class="lead-entry-grid">
+          <article class="lead-entry-card">
+            <div class="lead-entry-copy">
+              <span class="solution-label">Quartiers résidentiels</span>
+              <h3>Le client choisit d'abord sa tranche de facture.</h3>
+              <p>
+                Un mini-parcours en 2 questions aide à préparer une demande claire pour les
+                villas, les résidences et les logements collectifs.
+              </p>
+            </div>
+            <div class="mini-list">
+              <span>500 à 1000 DH</span>
+              <span>1500 à 2500 DH</span>
+              <span>3000 à 5000 DH</span>
+              <span>Objectif 50 à 90 %</span>
+            </div>
+            <button class="button button-primary" data-open-lead="residentiel" type="button">
+              Lancer la simulation
+            </button>
+          </article>
+
+          <article class="lead-entry-card lead-entry-card-dark">
+            <div class="lead-entry-copy">
+              <span class="solution-label">Usines & sites industriels</span>
+              <h3>Le client qualifie son projet avant d'envoyer les factures sur 6 mois.</h3>
+              <p>
+                La landing page collecte la ville, l'activité et une remarque utile, puis
+                ouvre WhatsApp avec un message prêt à compléter par les factures.
+              </p>
+            </div>
+            <div class="mini-list">
+              <span>Ville du projet</span>
+              <span>Type d'activité</span>
+              <span>Remarque optionnelle</span>
+              <span>Facture 6 mois</span>
+            </div>
+            <button class="button button-light" data-open-lead="industriel" type="button">
+              Ouvrir le parcours usine
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="solutions container" id="solutions">
+        <div class="section-heading">
+          <span class="eyebrow">Landing page solutions</span>
+        </div>
+
+        <div class="solution-grid">
+          <article
+            class="solution-card with-image"
+            style="background-image: linear-gradient(180deg, rgba(9, 22, 15, 0.18), rgba(9, 22, 15, 0.78)), url('assets/img/quartier alraed.png');"
+          >
+            <div>
+              <span class="solution-label">Residentiel</span>
+              <h3>Quartiers résidentiels</h3>
+              <p>
+                Panneaux, onduleurs hybrides, batteries lithium et packs d'autonomie pour
+                villas, résidences et logements collectifs.
+              </p>
+            </div>
+            <button class="button button-ghost solution-cta" data-open-lead="residentiel" type="button">
+              Choisir la facture
+            </button>
+          </article>
+
+          <article class="solution-card professional-card">
+            <span class="solution-label">Professionnel</span>
+            <h3>Bureaux, commerces et sites de service</h3>
+            <p>
+              Un parcours simple pour comparer les marques, consulter les prix, filtrer les
+              équipements et envoyer une demande WhatsApp avec besoin détaillé.
+            </p>
+            <ul class="solution-points">
+              <li>Recherche par nom de produit</li>
+              <li>Filtre rapide par marque</li>
+              <li>Panier modifiable avant envoi</li>
+            </ul>
+            <button class="button button-secondary solution-cta" data-solution="professionnel" type="button">
+              Ouvrir un devis professionnel
+            </button>
+          </article>
+
+          <article
+            class="solution-card with-image"
+            style="background-image: linear-gradient(180deg, rgba(9, 22, 15, 0.12), rgba(9, 22, 15, 0.78)), url('assets/img/usine alraed.png');"
+          >
+            <div>
+              <span class="solution-label">Industriel</span>
+              <h3>Usines & plateformes industrielles</h3>
+              <p>
+                Solutions haute puissance pour autoconsommation, stockage, pompage, charge
+                électrique et pilotage de la performance.
+              </p>
+            </div>
+            <button class="button button-ghost solution-cta" data-open-lead="industriel" type="button">
+              Envoyer la facture 6 mois
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="categories container" id="categories">
+        <div class="section-heading split-heading">
+          <div>
+            <span class="eyebrow">Catégories & marques</span>
+          </div>
+        </div>
+
+        <div class="category-grid" id="categoryGrid"></div>
+
+        <div class="brand-panel">
+          <div class="brand-panel-copy">
+            <span class="eyebrow">Marques en avant</span>
+            <h3>Une zone marques pour rassurer, filtrer et accélérer la navigation.</h3>
+          </div>
+          <div class="brand-grid" id="brandGrid"></div>
+        </div>
+      </section>
+
+      <section class="catalogue container" id="catalogue">
+        <div class="section-heading split-heading">
+          <div>
+            <span class="eyebrow">Catalogue produit</span>
+          </div>
+        </div>
+
+        <div class="catalog-shell">
+          <aside class="filters-card">
+            <label class="field">
+              <span>Recherche produit</span>
+              <input
+                type="search"
+                id="searchInput"
+                placeholder="Ex: panneau Jinko, batterie Dyness, Solax..."
+              />
+            </label>
+
+            <label class="field">
+              <span>Filtrer par catégorie</span>
+              <select id="categorySelect">
+                <option value="all">Toutes les catégories</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Filtrer par marque</span>
+              <select id="brandSelect">
+                <option value="all">Toutes les marques</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Trier</span>
+              <select id="sortSelect">
+                  <option value="featured">Recommandés</option>
+                  <option value="priceAsc">Prix croissant</option>
+                  <option value="priceDesc">Prix décroissant</option>
+                  <option value="promo">Promotions d'abord</option>
+              </select>
+            </label>
+
+            <div class="filter-actions">
+              <button class="button button-secondary" id="resetFilters" type="button">
+                Reinitialiser
+              </button>
+              <button class="button button-primary" id="openCartFromFilters" type="button">
+                Voir le panier
+              </button>
+            </div>
+          </aside>
+
+          <div class="catalog-content">
+            <div class="results-bar">
+              <div>
+                <span class="eyebrow">Résultats</span>
+                <h3 id="resultsTitle">Produits recommandés</h3>
+              </div>
+              <p id="resultsMeta">0 produit</p>
+            </div>
+
+            <div class="active-filters" id="activeFilters"></div>
+            <div class="product-grid" id="productGrid"></div>
+            <div class="empty-state" id="emptyState" hidden>
+              <h3>Aucun produit ne correspond aux filtres.</h3>
+              <p>Essayez une autre marque, une autre catégorie ou remettez les filtres à zéro.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="process container">
+        <div class="section-heading">
+          <span class="eyebrow">Parcours client</span>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <strong>1. Explorer</strong>
+            <p>Le client arrive par solution, catégorie ou marque, puis identifie le bon équipement.</p>
+          </article>
+          <article class="process-card">
+            <strong>2. Comparer</strong>
+            <p>Les prix sont visibles tout de suite, avec promos, tags techniques et usages recommandés.</p>
+          </article>
+          <article class="process-card">
+            <strong>3. Construire le panier</strong>
+            <p>Les quantites sont modifiables et le total estimatif reste visible en permanence.</p>
+          </article>
+          <article class="process-card">
+            <strong>4. Converser</strong>
+            <p>Le message WhatsApp est préparé selon le contenu du panier et le type de projet choisi.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section container" id="contact">
+        <div class="contact-card">
+          <div class="contact-copy">
+            <span class="eyebrow">Contact</span>
+            <h2>Contact ALRAED</h2>
+            <p>Tous nos contacts : téléphone, WhatsApp, Instagram.</p>
+
+            <div class="contact-brand-strip">
+              <div class="contact-brand-badge">
+                <img src="assets/img/logo.jpeg" alt="Logo ALRAED Energy" />
+                <div>
+                  <strong>ALRAED Energy</strong>
+                  <small>Logo officiel</small>
+                </div>
+              </div>
+
+              <div class="contact-inline-links">
+                <a class="button button-secondary" href="#catalogue">Produits</a>
+                <a
+                  class="button button-secondary"
+                  href="https://www.instagram.com/alraed_energy/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Instagram
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-quick-grid">
+              <article class="contact-method-card">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.2 19.2 0 0 1-5.9-5.9A19.8 19.8 0 0 1 2.2 4.3 2 2 0 0 1 4.2 2h3a2 2 0 0 1 2 1.7l.5 3.2a2 2 0 0 1-.6 1.8l-1.3 1.3a16 16 0 0 0 6.1 6.1l1.3-1.3a2 2 0 0 1 1.8-.6l3.2.5A2 2 0 0 1 22 16.9Z" />
+                  </svg>
+                </div>
+                <div class="contact-method-copy">
+                  <span>Téléphone</span>
+                  <strong>+212 677 315 076</strong>
+                </div>
+                <a class="button button-primary" href="tel:+212677315076">Appeler</a>
+              </article>
+
+              <article class="contact-method-card">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 11.5A8.5 8.5 0 0 1 7.6 19l-3.6 1 1-3.5A8.5 8.5 0 1 1 20 11.5Z" />
+                    <path d="M8.8 10.2c.2-.4.4-.4.7-.4h.6c.2 0 .4 0 .5.4l.5 1.2c.1.2.1.4 0 .6l-.4.6c-.1.1-.1.3 0 .4.3.6 1 1.3 1.6 1.6.1.1.3.1.4 0l.6-.4c.2-.1.4-.1.6 0l1.2.5c.3.1.4.3.4.5v.6c0 .3 0 .5-.4.7-.4.2-1 .3-1.6.2-2.8-.6-5-2.8-5.6-5.6-.1-.6 0-1.2.2-1.6Z" />
+                  </svg>
+                </div>
+                <div class="contact-method-copy">
+                  <span>WhatsApp</span>
+                  <strong>WhatsApp</strong>
+                  <p>Réponse rapide</p>
+                </div>
+                <a
+                  class="button button-primary"
+                  href="https://wa.me/212677315076?text=Bonjour%20ALRAED%20Energy,%20je%20souhaite%20des%20informations%20sur%20vos%20solutions%20solaires."
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Envoyer message
+                </a>
+              </article>
+
+              <article class="contact-method-card">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <path d="M8 12a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z" />
+                    <path d="M17.5 6.5h.01" />
+                  </svg>
+                </div>
+                <div class="contact-method-copy">
+                  <span>Instagram</span>
+                  <strong>@alraed_energy</strong>
+                </div>
+                <a
+                  class="button button-secondary"
+                  href="https://www.instagram.com/alraed_energy/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Ouvrir
+                </a>
+              </article>
+            </div>
+
+            <article class="contact-details-card">
+              <span class="eyebrow">Informations</span>
+              <div class="contact-details-list">
+                <div class="contact-details-item">
+                  <span>Email</span>
+                  <strong>—</strong>
+                </div>
+                <div class="contact-details-item">
+                  <span>Adresse</span>
+                  <strong>—</strong>
+                </div>
+                <div class="contact-details-item">
+                  <span>Horaires</span>
+                  <strong>De lundi jusqu'à dimanche, de 9h à 20h</strong>
+                </div>
+                <div class="contact-details-item">
+                  <span>Localisation</span>
+                  <strong>—</strong>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <form class="quote-card" id="quoteForm">
+            <span class="eyebrow">Demande de devis</span>
+            <h3>Demande de devis</h3>
+            <p>Envoi direct vers WhatsApp.</p>
+
+            <div class="quote-form-grid">
+              <label class="field">
+                <span>Nom complet</span>
+                <input id="quoteName" type="text" placeholder="Nom complet" required />
+              </label>
+
+              <label class="field">
+                <span>Téléphone</span>
+                <input id="quotePhone" type="tel" placeholder="06xxxxxxxx" required />
+              </label>
+
+              <label class="field">
+                <span>Email</span>
+                <input id="quoteEmail" type="email" placeholder="email@exemple.com" />
+              </label>
+
+              <label class="field">
+                <span>Type</span>
+                <select id="quoteType">
+                  <option value="Résidentiel">Résidentiel</option>
+                  <option value="Industriel">Industriel</option>
+                  <option value="Professionnel">Professionnel</option>
+                  <option value="Pompage solaire">Pompage solaire</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span>Ville</span>
+                <input id="quoteCity" type="text" placeholder="Ville" />
+              </label>
+
+              <label class="field quote-form-full">
+                <span>Détails</span>
+                <textarea
+                  id="quoteDetails"
+                  rows="5"
+                  placeholder="Puissance souhaitée, consommation, etc."
+                ></textarea>
+              </label>
+            </div>
+
+            <div class="quote-actions">
+              <button class="button button-primary" type="submit">Envoyer</button>
+              <a class="button button-secondary" href="#catalogue">Produits</a>
+              <a
+                class="button button-secondary"
+                href="https://www.instagram.com/alraed_energy/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Instagram
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="partners-section container" id="partenaires">
+        <div class="section-heading">
+          <span class="eyebrow">Partenaires</span>
+          <h2>Nos marques partenaires</h2>
+        </div>
+
+        <div class="partners-shell">
+          <div class="partners-grid" id="partnersGrid"></div>
+        </div>
+      </section>
+    </main>
+
+    <button class="floating-whatsapp" id="floatingWhatsapp" type="button">
+      WhatsApp
+    </button>
+
+    <div class="mobile-bar">
+      <a class="button button-secondary" href="#catalogue">Catalogue</a>
+      <button class="button button-primary" id="mobileCartToggle" type="button">Panier</button>
+    </div>
+
+    <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="drawer-header">
+        <div>
+          <span class="eyebrow">Panier modifiable</span>
+          <h2>Demande WhatsApp intelligente</h2>
+        </div>
+        <button class="icon-button" id="closeCart" type="button" aria-label="Fermer le panier">
+          Fermer
+        </button>
+      </div>
+
+      <div class="drawer-body">
+        <div class="cart-items" id="cartItems"></div>
+
+        <div class="lead-box">
+          <label class="field">
+            <span>Type de projet</span>
+            <select id="projectType">
+              <option value="auto">Inférence automatique</option>
+              <option value="quartier résidentiel">Quartier résidentiel</option>
+              <option value="bâtiment professionnel">Bâtiment professionnel</option>
+              <option value="usine ou site industriel">Usine ou site industriel</option>
+              <option value="pompage solaire">Pompage solaire</option>
+              <option value="site autonome">Site autonome</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Ville / zone</span>
+            <input id="projectCity" type="text" placeholder="Ex: Casablanca, Rabat, Settat..." />
+          </label>
+
+          <label class="field">
+            <span>Précision complémentaire</span>
+            <textarea
+              id="projectNotes"
+              rows="3"
+              placeholder="Ex: besoin de batterie, puissance souhaitée, toiture disponible..."
+            ></textarea>
+          </label>
+        </div>
+      </div>
+
+      <div class="drawer-footer">
+        <div class="total-box">
+          <div>
+            <span>Total estimatif</span>
+            <strong id="cartTotal">0 MAD</strong>
+          </div>
+          <p id="cartSummary">Le panier est vide.</p>
+        </div>
+
+        <label class="field preview-field">
+          <span>Message WhatsApp généré</span>
+          <textarea id="messagePreview" rows="8" readonly></textarea>
+        </label>
+
+        <div class="drawer-actions">
+          <button class="button button-secondary" id="clearCart" type="button">
+            Vider le panier
+          </button>
+          <a class="button button-primary" id="checkoutWhatsapp" href="#" target="_blank" rel="noreferrer">
+            Envoyer sur WhatsApp
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <dialog class="product-modal" id="productModal">
+      <button class="icon-button modal-close" id="closeModal" type="button">Fermer</button>
+      <div class="modal-content" id="modalContent"></div>
+    </dialog>
+
+    <dialog class="lead-modal" id="residentWizard">
+      <div class="lead-modal-shell">
+        <button class="icon-button lead-modal-close" data-close-lead="residentWizard" type="button">
+          Fermer
+        </button>
+
+        <div class="lead-modal-head">
+          <span class="eyebrow">Quartiers résidentiels</span>
+          <h2>Simulation rapide par facture</h2>
+          <p>Une simulation claire pour estimer rapidement votre besoin solaire maison par maison.</p>
+        </div>
+
+        <div class="lead-modal-banner">
+          <img src="assets/img/quartier alraed.png" alt="Quartier résidentiel ALRAED Energy" />
+          <div class="lead-modal-banner-copy">
+            <strong>Maisons, villas et résidences</strong>
+            <span>Commencez par votre facture et recevez une orientation simple, rapide et concrète.</span>
+          </div>
+        </div>
+
+        <div class="lead-progress" aria-label="Progression du questionnaire résidentiel">
+          <div class="lead-progress-track">
+            <span id="residentProgressBar"></span>
+          </div>
+          <strong id="residentProgressText">1/3</strong>
+        </div>
+
+        <section class="lead-step" id="residentStep1">
+          <div class="lead-step-copy">
+            <span class="step-count">Étape 1</span>
+            <h3>Combien payez-vous sur la facture d'électricité ?</h3>
+            <p>Choisissez la tranche la plus proche pour démarrer l'étude et mieux dimensionner votre future installation.</p>
+          </div>
+
+          <div class="wizard-choice-grid">
+            <button class="wizard-choice" data-resident-bill="500 à 1000 DH" type="button">
+              500 à 1000 DH
+            </button>
+            <button class="wizard-choice" data-resident-bill="1500 à 2500 DH" type="button">
+              1500 à 2500 DH
+            </button>
+            <button class="wizard-choice" data-resident-bill="3000 à 5000 DH" type="button">
+              3000 à 5000 DH
+            </button>
+          </div>
+        </section>
+
+        <section class="lead-step" id="residentStep2" hidden>
+          <div class="lead-step-copy">
+            <span class="step-count">Étape 2</span>
+            <h3>Quel est votre objectif d'économie ?</h3>
+            <p>Choisissez le niveau d'économie souhaité pour préciser votre priorité entre budget, confort et autonomie.</p>
+          </div>
+
+          <div class="wizard-choice-grid compact">
+            <button class="wizard-choice" data-resident-save="50%" type="button">50%</button>
+            <button class="wizard-choice" data-resident-save="75%" type="button">75%</button>
+            <button class="wizard-choice" data-resident-save="90%" type="button">90%</button>
+          </div>
+
+          <div class="lead-step-actions">
+            <button class="button button-secondary" id="residentBackToBilling" type="button">
+              Retour
+            </button>
+          </div>
+        </section>
+
+        <section class="lead-step" id="residentStep3" hidden>
+          <div class="lead-step-copy">
+            <span class="step-count">Étape 3</span>
+            <h3>Le message WhatsApp est prêt.</h3>
+            <p>Envoyez votre demande en un clic pour recevoir une proposition adaptée à votre consommation.</p>
+          </div>
+
+          <div class="lead-summary">
+            <strong>Résumé</strong>
+            <p id="residentSummary">Facture: - | Objectif: -</p>
+          </div>
+
+          <div class="lead-step-actions">
+            <a class="button button-primary" id="residentWaLink" href="#" target="_blank" rel="noreferrer">
+              Envoyer sur WhatsApp
+            </a>
+            <button class="button button-secondary" id="residentBackToSavings" type="button">
+              Retour
+            </button>
+            <button class="button button-dark" id="residentRestart" type="button">
+              Recommencer
+            </button>
+          </div>
+        </section>
+      </div>
+    </dialog>
+
+    <dialog class="lead-modal lead-modal-dark" id="industrialWizard">
+      <div class="lead-modal-shell">
+        <button class="icon-button lead-modal-close" data-close-lead="industrialWizard" type="button">
+          Fermer
+        </button>
+
+        <div class="lead-modal-head">
+          <span class="eyebrow">Usines & sites industriels</span>
+          <h2>Demande de devis avec facture 6 mois</h2>
+          <p>
+            Une simulation pensée pour les charges importantes, avec les bonnes informations dès le premier contact.
+          </p>
+        </div>
+
+        <div class="lead-modal-banner lead-modal-banner-dark">
+          <img src="assets/img/usine alraed.png" alt="Usine et site industriel ALRAED Energy" />
+          <div class="lead-modal-banner-copy">
+            <strong>Production, entrepôts et plateformes</strong>
+            <span>Ajoutez votre ville, votre activité et préparez l'envoi des factures pour une étude sérieuse.</span>
+          </div>
+        </div>
+
+        <div class="lead-progress" aria-label="Progression du questionnaire industriel">
+          <div class="lead-progress-track">
+            <span id="industrialProgressBar"></span>
+          </div>
+          <strong id="industrialProgressText">1/2</strong>
+        </div>
+
+        <section class="lead-step" id="industrialStep1">
+          <div class="lead-step-copy">
+            <span class="step-count">Étape 1</span>
+            <h3>Informations du projet</h3>
+            <p>Ces informations préparent une analyse plus précise du site avant l'envoi des factures.</p>
+          </div>
+
+          <div class="lead-form-grid">
+            <label class="field">
+              <span>Ville</span>
+              <input id="industrialCity" type="text" placeholder="Ex: Casablanca, Rabat..." />
+            </label>
+
+            <label class="field">
+              <span>Type d'activité</span>
+              <input id="industrialActivity" type="text" placeholder="Ex: usine, entrepôt, hôtel..." />
+            </label>
+
+            <label class="field lead-form-full">
+              <span>Remarque optionnelle</span>
+              <textarea
+                id="industrialNote"
+                rows="4"
+                placeholder="Ex: puissance souhaitée, surface disponible, consommation élevée..."
+              ></textarea>
+            </label>
+          </div>
+
+          <div class="lead-step-actions">
+            <button class="button button-dark" id="industrialNext" type="button">
+              Suivant
+            </button>
+          </div>
+        </section>
+
+        <section class="lead-step" id="industrialStep2" hidden>
+          <div class="lead-step-copy">
+            <span class="step-count">Étape 2</span>
+            <h3>Envoyer les factures d'électricité des 6 derniers mois</h3>
+            <p>
+              Une fois WhatsApp ouvert, le client joint simplement les factures en PDF ou
+              en photos pour lancer une étude plus fiable de la consommation.
+            </p>
+          </div>
+
+          <div class="lead-summary lead-summary-dark">
+            <strong>Résumé</strong>
+            <p id="industrialSummary">Ville: - | Activité: -</p>
+          </div>
+
+          <div class="lead-step-actions">
+            <a class="button button-primary" id="industrialWaLink" href="#" target="_blank" rel="noreferrer">
+              Ouvrir WhatsApp
+            </a>
+            <button class="button button-secondary" id="industrialBack" type="button">
+              Retour
+            </button>
+            <button class="button button-light" id="industrialRestart" type="button">
+              Recommencer
+            </button>
+          </div>
+        </section>
+      </div>
+    </dialog>
+  </body>
+</html>
